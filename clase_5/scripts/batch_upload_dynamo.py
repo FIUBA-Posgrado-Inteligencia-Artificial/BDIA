@@ -53,7 +53,7 @@ if __name__ == '__main__':
     ## de JSON que comienza con boto3 y crear los suyos dejando boto3 como primera
     ## parte del nombre)
     file_list = glob.glob('dynamodb_data/boto3*.json')
-    print('Tablas actualmente creadas en el entorno:')
+    print('Tablas leidas por crear:')
     for file in file_list:
         print(f'\t-- {file}')
         
@@ -91,10 +91,10 @@ if __name__ == '__main__':
             ## incursionar en exceso de pedidos.
             with table_to_use.batch_writer() as batch:
                 for item in table_items:
-                        ## Escribimos el dato
-                        batch.put_item(
-                            Item = item
-                        )
+                    ## Escribimos el dato
+                    batch.put_item(
+                        Item = item
+                    )
                 
             ## Ahora validamos que los datos persistan en la tabla!
             
