@@ -1,0 +1,38 @@
+{
+    "table_name": "Forum",
+    "schema": {
+        "KeySchema": [
+            {
+                "AttributeName": "Name",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "Category",
+                "KeyType": "RANGE"
+            }
+        ],
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "Name",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "Category",
+                "AttributeType": "S"
+            }
+        ]
+    },
+    "items": [
+        {
+            "Name": "Amazon DynamoDB",
+            "Category": "Amazon Web Services",
+            "Threads": "2",
+            "Messages": "4",
+            "Views": "1000"
+        },
+        {
+            "Name": "Amazon S3",
+            "Category": "Amazon Web Services"
+        }
+    ]
+}

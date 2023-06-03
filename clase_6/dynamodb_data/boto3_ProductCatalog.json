@@ -1,0 +1,133 @@
+{
+    "table_name": "ProductCatalog",
+    "schema": {
+        "KeySchema": [
+            {
+                "AttributeName": "Id",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "Title",
+                "KeyType": "RANGE"
+            }
+        ],
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "Id",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "Title",
+                "AttributeType": "S"
+            }
+        ]
+    },
+    "items": [
+        {
+            "Id": 101,
+            "Title": "Book 101 Title",
+            "ISBN": "111-1111111111",
+            "Authors": [
+                "Author1"
+            ],
+            "Price": 2,
+            "Dimensions": "8.5 x 11.0 x 0.5",
+            "PageCount": 50,
+            "InPublication": true,
+            "ProductCategory": "Book"
+        },
+        {
+            "Id": 102,
+            "Title": "Book 102 Title",
+            "ISBN": "222-2222222222",
+            "Authors": [
+                "Author1",
+                "Author2"
+            ],
+            "Price": 20,
+            "Dimensions": "8.5 x 11.0 x 0.8",
+            "PageCount": 600,
+            "InPublication": true,
+            "ProductCategory": "Book"
+        },
+        {
+            "Id": 103,
+            "Title": "Book 103 Title",
+            "ISBN": "333-3333333333",
+            "Authors": [
+                "Author1",
+                "Author2"
+            ],
+            "Price": 2000,
+            "Dimensions": "8.5 x 11.0 x 1.5",
+            "PageCount": 600,
+            "InPublication": false,
+            "ProductCategory": "Book"
+        },
+        {
+            "Id": 201,
+            "Title": "18-Bike-201",
+            "Description": "201 Description",
+            "BicycleType": "Road",
+            "Brand": "Mountain A",
+            "Price": 100,
+            "Color": [
+                "Red",
+                "Black"
+            ],
+            "ProductCategory": "Bicycle"
+        },
+        {
+            "Id": 202,
+            "Title": "21-Bike-202",
+            "Description": "202 Description",
+            "BicycleType": "Road",
+            "Brand": "Brand-Company A",
+            "Price": 200,
+            "Color": [
+                "Green",
+                "Black"
+            ],
+            "ProductCategory": "Bicycle"
+        },
+        {
+            "Id": 203,
+            "Title": "19-Bike-203",
+            "Description": "203 Description",
+            "BicycleType": "Road",
+            "Brand": "Brand-Company B",
+            "Price": 300,
+            "Color": [
+                "Red",
+                "Green",
+                "Black"
+            ],
+            "ProductCategory": "Bicycle"
+        },
+        {
+            "Id": 204,
+            "Title": "18-Bike-204",
+            "Description": "204 Description",
+            "BicycleType": "Mountain",
+            "Brand": "Brand-Company B",
+            "Price": 400,
+            "Color": [
+                "Red"
+            ],
+            "ProductCategory": "Bicycle"
+        },
+        {
+            "Id": 205,
+            "Title": "18-Bike-204",
+            "Description": "205 Description",
+            "BicycleType": "Hybrid",
+            "Brand": "Brand-Company C",
+            "Price": 500,
+            "Color": [
+                "Red",
+                "Black"
+            ],
+            "ProductCategory": "Bicycle"
+        }
+    ]
+}
