@@ -18,7 +18,7 @@
 
 -- Para cada artista, encuentra el álbum con más pistas y clasifica a los artistas por este número.
 
--- Selecciona todas las pistas que tienen la palabra "amor" en su título.
+-- Selecciona todas las pistas que tienen la palabra "love" en su título.
 
 -- Selecciona a todos los clientes cuyo primer nombre comienza con 'A'.
 
