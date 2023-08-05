@@ -1,0 +1,5 @@
+faiss-cpu==1.7.4
+chromadb
+transformers
+pandas
+sentence-transformers
