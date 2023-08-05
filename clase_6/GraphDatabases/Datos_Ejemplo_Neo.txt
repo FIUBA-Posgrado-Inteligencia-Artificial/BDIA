@@ -149,9 +149,9 @@ MATCH (Corrado: Persona { apellido: "Corrado"}), (M: Persona { apellido: "Mendez
 CREATE (Corrado)-[:CONOCE_A { fechad: "2000", motivo: "Trabajo" } ]->(M);
 MATCH (Corrado: Persona { apellido: "Corrado"}), (L: Persona { apellido: "Lupis"} ) 
 CREATE (Corrado)-[:CONOCE_A { fechad: "1994", motivo: "Estudio" } ]->(L);
-MATCH (Corrado: Persona { apellido: "Corrado"}), (D: Persona { apellido: "Dominguez"} ) 
-CREATE (Corrado)-[:CONOCE_A { fechad: "1990", motivo: "Amistad" } ]->(D)
+MATCH (Corrado: Persona { apellido: "Corrado"}), (D: Persona { apellido: "Dominguez"} )
+CREATE (Corrado)-[:CONOCE_A { fechad: "1990", motivo: "Amistad" } ]->(D);
 MATCH (Lupis: Persona { apellido: "Lupis"}), (L: Persona { apellido: "López"} ) 
 CREATE (Lupis)-[:CONOCE_A { fechad: "1994", motivo: "Estudio" } ]->(L);
-MATCH (López: Persona { apellido: "López"}), (D: Persona { apellido: "González"} ) 
-CREATE (López)-[:CONOCE_A { fechad: "1990", motivo: "Amistad" } ]->(D);
+MATCH (Lopez: Persona { apellido: "López"}), (D: Persona { apellido: "González"} )
+CREATE (Lopez)-[:CONOCE_A { fechad: "1990", motivo: "Amistad" } ]->(D);
