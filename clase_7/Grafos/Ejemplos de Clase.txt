@@ -61,7 +61,7 @@ CREATE UNIQUE (a)-[r:CONOCE_A]->(b)
 RETURN r
 
 Crear un nodo para Anal�a Martinelli s�lo si no existe, con fecha de nacimiento 30/06/1968. Si existe, setear esta fecha.
-MERGE (n:Persona {nombre: "Anal�a", apellido: "Martinelli"})
+MERGE (n:Persona {nombre: "Analia", apellido: "Martinelli"})
 ON CREATE SET n.fechanac="30/06/1968"
 ON MATCH SET n.fechanac="30/06/1968"
 RETURN n

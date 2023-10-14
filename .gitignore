@@ -3,3 +3,5 @@
 res/*
 */*/creds*
 */*/scratch*
+*/*/*.docx
+*/*.ignore
